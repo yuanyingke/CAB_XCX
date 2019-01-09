@@ -1,0 +1,7 @@
+/* pages/coverageArea/coverageArea.wxss */
+@import '/component/wx-index-list/wx-index-list.wxss';
+
+.container{
+  width:100%;
+  height:100%;
+}

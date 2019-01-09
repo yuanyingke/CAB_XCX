@@ -1,0 +1,167 @@
+<!-- <view bindtap='back' class='prev_box'>
+  <view class='Prev'><text class='iconfont icon-zuo'></text></view>
+</view> -->
+<view class="container">
+  <!-- <view class='content'>
+      <view class="header-box header">
+          <view class='header-box-left'>
+              <view class='title'>众安幼犬保险</view>
+              <view class='sm-title'>保证狗狗平安度过幼年危险期</view>
+          </view>
+          <view class='header-box-right'>
+                <text class='inRule' bindtap='toPupInsurance'>查看详情</text>
+                <text class='iconfont icon-gengduo'></text>
+          </view> 
+      </view>
+    
+      <view class='disease_box'>
+          <text class='title'>保障疾病范围:</text>
+          <view class='content'>
+            <text>-犬瘟</text>
+            <text>-犬细小</text>
+            <text>-犬冠状</text>
+            <text>-犬副流感</text>
+            <text>-犬腺病毒II型</text>
+            <text>-钩端螺旋体I型</text>
+            <text>-钩端螺旋体II型</text>
+            <text>-莱姆病</text>
+          </view>
+      </view>
+      <view class='insurance_box'>
+        <view class='table'>
+          <view class='table-tr'>
+            <view class='tab-title'>保障犬只</view>
+            <view class='tab-content'>CKU认证犬只</view>
+          </view>
+          <view class='table-tr'>
+            <view class='tab-title'>保险期限</view>
+            <view class='tab-content'>3个月</view>
+          </view>
+          <view class='table-tr'>
+            <view class='tab-title'>保障金额</view>
+            <view class='tab-content'>1000元</view>
+          </view>
+        </view>
+      </view>
+      <view class='dogInfo_box'>
+        <view class='title'>
+          <text>投保犬只</text>
+          <text class='notice'>*请认真核对犬只信息</text>
+        </view>
+        <view class='dogInfo'>
+              <view>血统证书号:{{dogInfo.pedigreeCertifiedCode}}</view>
+              <view class="dogInfo-item">
+                  <text class="dogInfo-item-text">英文名:{{dogInfo.nameEn}}</text>
+                  <text class="dogInfo-item-text">呼名:{{dogInfo.callName}}</text>
+              </view>
+              <view class="dogInfo-item">
+                <text class="dogInfo-item-text">{{dogInfo.dogBreedName}}</text>
+                <text class="dogInfo-item-text">{{dogInfo.gender == 1 ? "公":"母"}}</text>
+                <text class="dogInfo-item-text">{{dogInfo.colorFlag}}</text>                  
+              </view>
+              <view>出生日期:{{dogInfo.birthdate}}</view>
+              <view>繁殖人:{{dogInfo.breeder}}</view>
+          </view>
+      </view>
+      <view class='insurance_date'>
+        <view>
+          <view class='title'>犬只观察期</view>
+          <view class='content'>2018年4月1日-2018年4月15日</view>
+        </view>
+        <view>
+          <view class='title'>犬只保障期</view>
+          <view class='content'>2018年4月16日-2018年7月16日</view>
+        </view>
+      </view>
+      <view class='agree_box'>
+        <checkbox-group bindchange="checkboxChange">
+          <label class="checkbox">
+            <checkbox value="{{isChecked}}" checked="{{isChecked}}"/>
+            <text>  我已仔细阅读并同意</text>
+          </label>
+          <view>
+              <text class='inRule' bindtap='toInsuranceClause'>《保险条款》</text>
+            </view>
+        </checkbox-group>
+      </view>
+  </view>   -->
+  <scroll-view scroll-y="true" id='content' scroll-into-view="{{scrollId}}" scroll-with-animation="true">
+    <view  bindtap='toPupInsurance' style='height:{{topHeight}}rpx;margin-top:-60rpx;' id='topLoad1'>
+        <image class='confirmCenter' src='../../image/confirmTop.png' mode="widthFix" bindload="topLoad"></image>
+    </view>
+    <view style='height:{{centerHeight}}rpx;position:relative;' id='dog'>
+        <image class='confirmCenter' src='../../image/confirmCenter.png' bindload="centerLoad" mode="widthFix"></image>
+        <view class='dog'>
+            <view class="dogInfo-box">
+              <view class='dogInfo'>
+                  <view class='pedigree'>
+                    <!-- <image src='../../image/confirmIcon.png' class='confirmIcon'></image> -->
+                    <text class='dogInfo_key'>血统证书号：</text>
+                    {{dogInfo.pedigreeCertifiedCode}}
+                  </view>
+                  <view class='dogInfoDetail'>
+                      <view class="dogInfo-item">
+                        <view class="dogInfo-item-text">
+                          <text class='dogInfo_key'>呼名：</text>
+                          {{dogInfo.callName}}
+                        </view>
+                        <view class="dogInfo-item-text">
+                            <text class='dogInfo_key'>品种：</text>
+                            {{dogInfo.dogBreedName}}
+                        </view>                  
+                      </view>
+                      
+                      <view class="dogInfo-item-text">
+                        <text class='dogInfo_key'>英文名：</text>
+                        {{dogInfo.nameEn}}
+                      </view>
+                      <view class="dogInfo-item">
+                        <view class="dogInfo-item-text">
+                            <text class='dogInfo_key'>毛色：</text>
+                            {{dogInfo.colorFlag}}
+                        </view>
+                        <view class="dogInfo-item-text">
+                            <text class='dogInfo_key'>性别：</text>
+                            {{dogInfo.gender == 1 ? "公":"母"}}
+                        </view>                  
+                      </view>
+                      <view class="dogInfo-item">
+                          <view class="dogInfo-item-text">
+                            <text class='dogInfo_key'>生日：</text>
+                            {{dogInfo.birthdate}}
+                        </view>
+                        <view class="dogInfo-item-text">
+                            <text class='dogInfo_key'>繁殖人：</text>
+                            {{dogInfo.breeder}}
+                        </view>
+                      </view>
+                  </view>
+              </view>
+          </view>
+        </view>
+    </view>
+    <view style='height:{{bottomHeight}}rpx;position:relative;' id='agreeBoxA'>
+        <image class='confirmCenter' src='../../image/confirmBottom.png' bindload="bottomLoad"  mode="widthFix"></image>
+        <view class='agree_box'>
+          <view>
+            <label class="checkbox" bindtap='toggleSelect'>
+              <image src='{{isChecked ? "../../image/confirmSelect.png" : "../../image/confirmUnSelect.png"}}' class='confirmUnSelect'></image>
+              <!-- <checkbox value="{{isChecked}}" checked="{{isChecked}}"/> -->
+              <text>  我已仔细阅读并同意</text>
+            </label>
+              <view>
+                <text class='inRule' bindtap='toInsuranceClause'>《保险条款》</text>
+              </view>
+          </view>
+        </view>
+    </view>
+  </scroll-view>
+  <view class='bottomBtn footer'>
+      <view>
+        <button bindtap='back'>返回修改</button>
+      </view>
+      <view>
+        <button bindtap='confirm'>确认投保</button>
+      </view>
+  </view>
+</view>

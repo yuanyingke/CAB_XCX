@@ -1,0 +1,69 @@
+<view class="container">
+     <view class='cityList' style='height:100vh;' wx:if="{{cityShow}}">
+        <!--如果需要我的城市,在属性中添加 my-city="{{cityName}}" 或 my-city="北京" 类似 -->
+        <list-html data="{{City}}" binddetail="binddetail"></list-html>
+    </view> 
+    <view wx:else>
+        <view class="form-box">
+            <view class="row-wrap">
+                <view class="label">犬只饲养地</view>
+                <view class='cityName' bindtap='selectCity'>
+                  <text>{{cityName}}</text>
+                  <text class='iconfont icon-gengduo'></text>
+                </view>
+            </view>
+            <view class="row-wrap">
+                <view class="label chipNoWrap" ><text class='iconfont icon-xinghao'></text>芯片号码</view>
+                <view class="label-right">
+                    <input name="chipNo" class="chipNo" maxlength="15" type="number" placeholder="仅支持CKU认证90-270日龄的犬只" value="{{chipNo}}" bindinput = "chipNoChange" confirm-hold='false'/>
+                </view>
+            </view>
+        </view>
+        <view class="dogInfo-box" wx:if="{{dogInfoShow}}">
+            <view class='dogInfo'>
+                <view class='pedigree'>
+                  <text class='dogInfo_key'>血统证书号：</text>
+                  {{dogInfo.pedigreeCertifiedCode}}
+                </view>
+                <view class='dogInfoDetail'>
+                    <view class="dogInfo-item">
+                        <view class="dogInfo-item-text">
+                          <text class='dogInfo_key'>呼名：</text>
+                          {{dogInfo.callName}}
+                        </view>
+                        <view class="dogInfo-item-text">
+                            <text class='dogInfo_key'>品种：</text>
+                            {{dogInfo.dogBreedName}}
+                        </view>                  
+                      </view>
+                    <view class="dogInfo-item-text">
+                      <text class='dogInfo_key'>英文名：</text>
+                      {{dogInfo.nameEn}}
+                    </view>
+                    <view class="dogInfo-item">
+                      <view class="dogInfo-item-text">
+                          <text class='dogInfo_key'>毛色：</text>
+                          {{dogInfo.colorFlag}}
+                      </view>
+                      <view class="dogInfo-item-text">
+                          <text class='dogInfo_key'>性别：</text>
+                          {{dogInfo.gender == 1 ? "公":"母"}}
+                      </view>                  
+                    </view>
+                    <view class="dogInfo-item">
+                        <view class="dogInfo-item-text">
+                          <text class='dogInfo_key'>生日：</text>
+                          {{dogInfo.birthdate}}
+                      </view>
+                      <view class="dogInfo-item-text">
+                          <text class='dogInfo_key'>繁殖人：</text>
+                          {{dogInfo.breeder}}
+                      </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <button type="primary" class="save-btn" bindtap='bindSave'>下一步</button>
+    </view>
+</view>
+

@@ -1,0 +1,93 @@
+<view class='box'>
+  <view class='box_bg'>
+    <image src='../../image/resultBg1.png' style='position:absolute;z-index:-2;top:-230rpx;width:100%;' mode='widthFix'></image>
+    <!-- <view class='box-header'>
+      <view>
+        <view>护照号/Num.</view>
+        <view>1258621</view>
+      </view>
+      <view>
+        <view>有效期/Effective Data</view>
+        <view>2018/06/13-2019/06/12</view>
+      </view>
+    </view> -->
+    <view class='box-content' style='background:url("../../image/resultBg2.png") no-repeat;background-size: 100%;background-position:0 0rpx;height:1010rpx;'>
+        <image src='../../image/resultBg2.png' class='resultBg2' mode='widthFix'></image>
+        <view class='petInfo'>
+          <view class='petMark' style='float:right;'>
+            <image src='../../image/dogMark.png' mode='widthFix' class='dogMark'></image>
+          </view>
+          <view class='box-content-2'>
+            <!-- <view>
+              <image src='../../image/defaultDog.png' style='height:232rpx;width:180rpx;'></image>
+            </view> -->
+            <view class='text-box'>
+              <view>
+                <text class='callName'>{{dogInfo.callName || dogInfo.nameEn}}</text>
+                <image src='../../image/male.png' style='height:30rpx;width:30rpx;margin-left:24rpx;'></image>
+              </view>
+              <view>
+                <text class='text-left1'>年龄：</text>
+                <text class='text-right1'>{{dogInfo.monthText}}</text>
+              </view>
+              <view>
+                <text class='text-left1'>品种：</text>
+                <text class='text-right1'>{{dogInfo.dogBreedName}}</text>
+              </view>
+              <view>
+                <text class='text-left1'>犬只芯片号：</text>
+                <text class='text-right1'>{{dogInfo.identificationFlag}}</text>
+              </view>
+              <view>
+                <text class='text-left1'>血统证书号：</text>
+                <text class='text-right1'>{{dogInfo.pedigreeCertifiedCode}}</text>
+              </view>
+              <view>
+                <image src='../../image/cku.png' class='ckuImg'></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='insuranceInfo'>
+          <view class='insuranceInfo-box1'>
+            <image src='../../image/textBg2.png' style='height:36rpx;width:200rpx;'></image>
+            <view class='insuranceInfo-box2' bindtap='ZADeatil'>
+              <view  wx:if="{{insuranceInfo.policyNo}}" >查看详情</view>
+              <text class='iconfont icon-gengduo' wx:if="{{insuranceInfo.policyNo}}"></text>
+            </view>
+          </view>
+          <view class='infoList'>
+            <view>
+              <text class='text-left' wx:if="{{insuranceInfo.policyNo}}">保单号：</text>
+              <text class='text-right' wx:if="{{insuranceInfo.policyNo}}">{{insuranceInfo.policyNo}}</text>
+              <text wx:else>犬龄满90天，保险自动激活</text>
+            </view>
+            <view>
+              <text class='text-left'>犬只芯片号：</text>
+              <text class='text-right'>{{dogInfo.identificationFlag}}</text>
+            </view><view>
+              <text class='text-left'>投保人：</text>
+              <text class='text-right'>{{insuranceInfo.insuredUser}}</text>
+            </view><view>
+              <text class='text-left'>被保人：</text>
+              <text class='text-right'>{{insuranceInfo.policyHolderUser}}</text>
+            </view>
+            <!-- <view>
+              <text class='text-left'>保险费：</text>
+              <text class='text-right'>已支付</text>
+            </view> -->
+            <view>
+              <text class='text-left'>等待期：</text>
+              <text class='text-right'>{{insuranceInfo.dogObPeriodFrom}}-{{insuranceInfo.dogObPeriodTo}}</text>
+            </view><view>
+              <text class='text-left'>保障期：</text>
+              <text class='text-right'>{{insuranceInfo.dogGuPeriodFrom}}-{{insuranceInfo.dogGuPeriodTo}}</text>
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class='box-footer'>
+      <view>更多福利即将上线，敬请期待</view>
+    </view>
+  </view>
+</view>

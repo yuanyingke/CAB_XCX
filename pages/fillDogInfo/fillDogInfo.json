@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "填写犬只信息",
+  "navigationBarBackgroundColor": "#4599FF",
+  "navigationBarTextStyle":"white",
+  "usingComponents": {
+    "list-html": "/component/wx-index-list/wx-index-list"
+  }
+}

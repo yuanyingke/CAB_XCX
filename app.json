@@ -1,0 +1,28 @@
+{
+  "pages":[ 
+    
+    "pages/bootPage/bootPage",
+    "pages/confirmInfo/confirmInfo",
+    "pages/firstPage/firstPage",
+    "pages/passportDetail/passportDetail",
+    "pages/fillDogInfo/fillDogInfo",
+    "pages/policyHolderInfo/policyHolderInfo",
+    "pages/pupInsurance/pupInsurance",
+    "pages/afterSale/afterSale",
+    "pages/coverageArea/coverageArea",
+    "pages/result/result",
+    "pages/allCity/allCity"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4599FF",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"    
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "downloadFile": 30000
+  },
+  "debug":false
+}

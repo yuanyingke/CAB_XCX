@@ -1,0 +1,4 @@
+<view class='cityList' style='height:100vh;'>
+    <!--如果需要我的城市,在属性中添加 my-city="{{cityName}}" 或 my-city="北京" 类似 -->
+    <list-html data="{{allCity}}" binddetail="binddetail"></list-html>
+</view>

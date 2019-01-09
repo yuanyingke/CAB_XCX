@@ -1,0 +1,64 @@
+<view class="container">
+  <!-- <view class='page-body'>
+    <view class='page-top'>
+      <view>
+      </view>
+      <view>
+      </view>
+    </view>
+    <view class='page-bottom'>
+      <view class='head'>
+        <image></image>
+        <text>宠物保险</text>
+      </view>
+      <view class="dogInfo-box" wx:if="{{dogInfoShow}}">
+          <view class='dogInfo'>
+              <view class='pedigree'>
+                <text class='dogInfo_key'>血统证书号：</text>
+                {{dogInfo.pedigreeCertifiedCode}}
+              </view>
+              <view class='dogInfoDetail'>
+                  <view class="dogInfo-item-text">
+                    <text class='dogInfo_key'>呼名：</text>
+                    {{dogInfo.callName}}
+                  </view>
+                  <view class="dogInfo-item-text">
+                    <text class='dogInfo_key'>英文名：</text>
+                    {{dogInfo.nameEn}}
+                  </view>
+                  <view class="dogInfo-item">
+                    <view class="dogInfo-item-text">
+                        <text class='dogInfo_key'>毛色：</text>
+                        {{dogInfo.colorFlag}}
+                    </view>
+                    <view class="dogInfo-item-text">
+                        <text class='dogInfo_key'>性别：</text>
+                        {{dogInfo.gender == 1 ? "公":"母"}}
+                    </view>                  
+                  </view>
+                  <view class="dogInfo-item">
+                      <view class="dogInfo-item-text">
+                        <text class='dogInfo_key'>生日：</text>
+                        {{dogInfo.birthdate}}
+                    </view>
+                    <view class="dogInfo-item-text">
+                        <text class='dogInfo_key'>繁殖人：</text>
+                        {{dogInfo.breeder}}
+                    </view>
+                  </view>
+              </view>
+          </view>
+      </view>
+      <view class='bottom'>
+        <text>更多福利即将上线，敬请期待...</text>
+      </view>
+    </view>
+  </view>  -->
+  <view style='width:100vw;height:{{imageHeight}}rpx;margin-top:-60rpx;overflow:hidden;' >
+    <image src='../../image/firstPageBg.png' style='width:100vw;margin-top:-60rpx;' bindload="imageLoad" mode='widthFix'></image>
+     
+  </view>
+  <view style='width:100vw;position:absolute;height:{{imageBtnHeight}}rpx;bottom:0;z-index:50;text-align:center;bottom:180rpx;padding:0 146rpx;box-sizing:border-box;' bindtap='toFillDogInfo'>
+    <image src='../../image/firstPageBtn.png'  bindload="imageBtnLoad" style='width:100%;' mode='widthFix'></image> 
+  </view>
+</view>

@@ -1,0 +1,87 @@
+<view>
+  
+  <!-- <view>
+    <view class='imgBox'>
+      <image src='../../image/swiper1.jpg'></image>
+    </view>
+    <view class='insurance_box'>
+      <view class='table'>
+        <view class='table-tr'>
+          <view class='tab-title'>保障犬只</view>
+          <view class='tab-content'>CKU认证犬只</view>
+        </view>
+        <view class='table-tr'>
+          <view class='tab-title'>保险期限</view>
+          <view class='tab-content'>3个月</view>
+        </view>
+        <view class='table-tr'>
+          <view class='tab-title'>保障金额</view>
+          <view class='tab-content'>1000元</view>
+        </view>
+      </view>
+    </view>
+  </view> -->
+  <!-- <view>  
+    <view class='coverBox'>
+      <view class='weui-article__h3'>保障范围</view>
+      <view class='article_box'>
+        <view class='smTitle'>保险标的：</view>
+        <view class='smContent'>被保险人的已注射CKU认证芯片的幼犬（3-9个月之间）。</view>
+      </view>
+      <view class='article_box'>
+        <view class='smTitle'>保险期限：</view>
+        <view class='smContent'>投保后，经过15天观察期后的3个月。</view>
+      </view>
+      <view class='article_box'>
+        <view class='smTitle'>观察期：</view>
+        <view class='smContent'>意外无等待期，约定疾病等待期15天。</view>
+      </view>
+      <view class='article_box'>
+        <view class='smTitle'>保障金额：</view>
+        <view class='smContent'>单次赔付限额1,000元，最高累计赔付限额1,000元。</view>
+      </view>
+      <view class='article_box'>
+        <view class='smTitle'>免赔率：</view>
+        <view class='smContent'>免赔额为300元，减去300元后按照80%赔付</view>
+      </view>
+      <view class='article_box'>
+        <view class='smTitle'>保险责任：</view>
+        <view class='smContent'>意外和等待期过后初次罹患约定疾病所产生的医疗费用。</view>
+      </view>
+      <view class='article_box'>
+        <view class='smTitle'>疾病清单：</view>
+        <view class='smContent'>犬瘟、犬细小、犬冠状、犬副流感、犬腺病毒II型、
+钩端螺旋体I型、钩端螺旋体II型、莱姆病。</view>
+      </view>
+    </view>
+  </view> -->
+  <view style='height:{{topHeight}}rpx;margin-top:-60rpx;'>
+      <image class='confirmCenter' src='../../image/insuranceInfo.jpg' mode="widthFix" bindload="topLoad"></image>
+  </view>
+  <view class='navBox'>
+    <view class='weui-cell' bindtap='coverageArea'>
+      <view>
+          所支持城市
+          <text class='iconfont icon-gengduo'></text>
+      </view>
+    </view>
+    <view class='weui-cell' bindtap='afterSale'>
+      <view>
+          售后及理赔
+          <text class='iconfont icon-gengduo'></text>
+      </view>
+    </view>
+    <view class='weui-cell' bindtap='insuranceInfo'>
+      <view>
+          投保须知
+          <text class='iconfont icon-gengduo'></text>
+      </view>
+    </view>
+    <view class='weui-cell' bindtap='insuranceClause'>
+      <view>
+          保险条款
+          <text class='iconfont icon-gengduo'></text>
+      </view>
+    </view>
+  </view>
+</view>

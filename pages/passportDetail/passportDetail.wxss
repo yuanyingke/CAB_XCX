@@ -1,0 +1,95 @@
+/* pages/passportDetail/passportDetail.wxss */
+.box{
+  width:100vw;
+  height: 1000rpx;
+}
+.box>view{
+  width:100vw;
+  height: 1000rpx;
+}
+.box_bg{
+  position:relative;
+}
+.box-header{
+  width:100vw;height:116rpx;display: flex;
+}
+.box-header>view{
+  width:50%;
+  
+  color:#fff;
+}
+.box-header>view:first-child{
+ padding-left: 64rpx;
+ 
+}
+.box-header>view>view:first-child{
+  margin-top: 30rpx;
+  font-size: 18rpx;
+  line-height: 18rpx;
+}
+.box-header>view>view:last-child{
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  line-height: 26rpx;
+}
+.box-footer{
+  height:110rpx;width:100vw;
+  padding-top: 5rpx;box-sizing: border-box;
+  text-align: center;color:#59a4ff;font-size:24rpx;line-height:24rpx;
+}
+.infoList{}
+.infoList>view{height:78rpx;border-bottom:2rpx solid #d7eaff; line-height: 78rpx;font-size:22rpx;letter-spacing:2rpx;}
+.infoList>view .text-left{color:#67acff;}
+.infoList>view .text-right{color:#4a4a4a;font-size:24rpx;}
+.callName{
+  width:300rpx;
+word-break:keep-all;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+display:inline-block;
+vertical-align:middle;
+
+}
+.text-left1{
+  font-size: 22rpx;color:#6f6043;
+}
+.text-right1{
+  font-size: 24rpx;color:#606060;word-break:keep-all;
+}
+.text-box{
+  white-space: nowrap;
+}
+.resultBg2{
+  position:absolute;z-index:-1;top:0rpx;width:100%;height:1010rpx;
+}
+.dogMark{
+  width:120rpx;height:15rpx;margin-top:10rpx;margin-right:30rpx;
+}
+.box-content-2{
+  padding:16rpx 82rpx 0rpx 74rpx;box-sizing:border-box;font-size:22rpx;line-height:44rpx;display:flex;width:100%;
+}
+.text-box{
+  margin-left:24rpx;flex:1;
+}
+.ckuImg{
+  height:36rpx;width:36rpx;float:right;
+}
+.insuranceInfo{
+  padding:0 82rpx;margin-top:80rpx;
+}
+.insuranceInfo-box1{
+  display:flex;align-items:content;
+}
+.insuranceInfo-box2{
+  flex:1;height:36rpx;display:flex;justify-content:flex-end;align-items:content;
+}
+.insuranceInfo-box2>view{
+  font-size:24rpx;color:#519fff;line-height:36rpx;
+}
+.insuranceInfo-box2>text{
+  font-size:24rpx;color:#519fff;line-height:36rpx;
+}
+.callName{
+  font-size:28rpx;line-height:44rpx;
+}

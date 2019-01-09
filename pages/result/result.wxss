@@ -1,0 +1,28 @@
+/* pages/result/result.wxss */
+.group{
+  width:100%;
+  margin:0 auto;
+  margin-top: 110rpx;
+}
+.group block{
+  
+}
+.firstRow{
+  font-size:36rpx;height:96rpx;line-height:96rpx;color:#318eff;letter-spacing: 4rpx;font-weight:500;
+}
+.secondRow{
+  font-size:26rpx;color:#318eff;letter-spacing: 4rpx;
+}
+.confirmCenter{
+  width:577rpx;
+  margin-left:38rpx;
+}
+.row{
+  text-align: center;
+}
+.detail{
+
+  margin: 102rpx 90rpx;
+  height: 80rpx;line-height: 80rpx;
+  font-size: 34rpx;background: -webkit-linear-gradient(left,rgb(136, 169, 255),rgb(41, 147, 255));
+}

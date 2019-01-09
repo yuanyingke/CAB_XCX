@@ -1,0 +1,23 @@
+<view class="group" wx:if="{{success}}">
+   <block>
+    <!-- <icon type="success" size="{{iconSize}}"/> -->
+    <view>
+      <image class='confirmCenter' src='../../image/result.png' mode="widthFix"></image>
+  </view>
+  </block>
+  <view class='row'>
+    <view class='firstRow'>恭喜您！</view>
+    <view class='secondRow'>您已成功激活众安幼犬保险</view>
+    <view class='secondRow' style='margin-top:80rpx;'>犬只观察期：{{dogObPeriodFrom}} - {{dogObPeriodTo}}</view>
+    <view class='secondRow'>犬只保障期：{{dogGuPeriodFrom}} - {{dogGuPeriodTo}}</view>
+  </view> 
+</view>
+<view class="group" wx:else>
+  <block>
+    <icon type="warn" size="{{iconSize}}"/>
+  </block>
+  <view>
+    <view>激活失败</view>
+  </view>
+</view>
+<button type='primary' class='detail'>查看保险详情</button>

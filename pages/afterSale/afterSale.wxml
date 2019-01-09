@@ -1,0 +1,90 @@
+<view class='weui-article'>
+  <view class='weui-article__section'>
+      <view class='title weui-article__h3'>众安幼犬保险理赔流程（暂行版）</view>
+      <view class='content'>
+        <view>
+          <view class='smTitle'>宠物就诊前</view>
+          <view class='pBox'>
+            <view class='p'>
+              请先拨打宠爱堡客服电话400-6607-000，并根据客服指引，前往众安认证的宠爱堡数字(北京)网络科技有限公司合作的医疗机构就诊，或选择“众安宠物保险”小程序-我的保单-绑定保单-我要理赔-合作医院中就诊；
+            </view>
+          </view>
+        </view>
+        <view>
+          <view class='smTitle'>就诊结束后</view>
+          <view class='pBox'>
+            <view class='p'>
+              请在宠物治疗结束后1个月内，先和宠爱堡客服沟通进行理赔材料的确认。然后，根据指示线下寄送理赔材料：
+            </view>
+            <view class='p'>
+              <view class='p'>
+                <view class='img_box'>
+                  <image src='../../image/A.png'></image>
+                </view>
+                <view class='pBox_text'>被保险人的身份证正反面照片；</view>
+              </view>
+              <view class='p'>
+                <view class='img_box'>
+                  <image src='../../image/B.png'></image>
+                </view>
+                <view class='pBox_text'>宠物在宠物医院，用芯片扫码枪扫描出点子标识号的照片，照片中的电子标识号应清晰可辨；</view>
+              </view>
+              <view class='p'>
+                <view class='img_box'>
+                  <image src='../../image/C.png'></image>
+                </view>  
+                  <view class='pBox_text'>本次医疗诊断和化验处方资料照片，包括宠物病历卡首页、本次门急诊病历页面、住院病历（若有）、抢救报告、手术记录、化验单、药物处方单等； 
+                  </view>                  
+              </view>
+              <view class='p'>
+                <view class='img_box'>
+                  <image src='../../image/D.png'></image>
+                </view>
+                <view class='pBox_text'>本次产生的医疗项目费用清单、发票或医院盖章的收据，费用清单上的医疗费用项目金额应当发票或收据金额对应，且金额合理；费用清单上的医疗项目与病历上的疾病对应；</view>
+              </view> 
+              <view class='p'>
+                <view class='img_box'>
+                  <image src='../../image/E.png'></image>
+                </view>
+                <view class='pBox_text'>投保人、被保险人所能提供的与确认保险事故的性质、原因、损失程度等有关的其他证明和资料；</view>
+              </view>
+              <view class='p'>
+                <view class='img_box'>
+                  <image src='../../image/F.png'></image>
+                </view>
+                <view class='pBox_text'>索赔申请书</view>
+              </view>  
+            </view>
+              
+          </view>
+        </view>
+        <view>
+          <view class='smTitle' style='background:url(../../image/textBg.png) 58rpx 40rpx no-repeat;background-size:180rpx 10rpx;color:#42637f;font-size:26rpx;'>
+              <image class='locationImg' src='../../image/location.png'></image>
+              寄送材料地址
+          </view>
+            <view class='pBox'>
+              <view class='p'>上海市黄浦区圆明园路169号协进大楼4楼航旅与商险事业部。</view>
+              <view class='p'>电话：021-60278666</view>
+            </view>
+        </view> 
+        <view>
+          <view class='smTitle'>众安审核及理赔</view>
+          <view class='pBox'>
+            确属保险责任范围的，资料齐全,责任明确的10个工作日之内结案并支付理赔款。
+          </view>
+          <view class='pBox'>
+            自众安幼犬保险理赔流程正式版实施后，本暂行版终止。
+          </view>
+        </view>
+      </view>
+      
+  </view>
+  
+</view>
+<view class='footer'>
+        <text>如对众安保险的理赔结果存在疑问，请拨打\n</text>
+        <text>众安保险客服热线</text>
+        <text class='zaPhone'>1010-9955</text>
+        <text>进行咨询。</text>
+</view>

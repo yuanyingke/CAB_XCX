@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<import src="../common/wx-index-list.wxml" />
+
+<view class="container">
+  <template is="cityList" data="{{list:City,rightArr:rightArr,jumpNum:jumpNum}}"/>
+</view>  

@@ -1,0 +1,156 @@
+.list-warpper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.list-scroll {
+  width: 95%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.list-scroll.top{
+  padding-top: 90rpx;
+}
+
+/* 样式控制  */
+
+.list-title {
+  background: rgb(239, 239, 239);
+  color: #656565;
+  font-size: 26rpx;
+  padding: 10rpx;
+  padding-left: 30rpx;
+  padding-top: 15rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+}
+
+.list-name {
+  position: relative;
+  font-size: 26rpx;
+  padding-left: 30rpx;
+  color: #282828;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+ .list-name.border::after {
+  content: "";
+  position: absolute;
+  left: 30rpx;
+  right: 0;
+  top: 0;
+  height: 2rpx;
+  background: #e4e4e4;
+} 
+
+.list-right-wrapper {
+  position: absolute;
+  top: 100rpx;
+  right: 0rpx;
+  padding: 10rpx 0;
+  border-radius: 20rpx;
+  z-index: 2;
+  background: #fff;
+  width:5%;
+}
+
+.right-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rpx 10rpx;
+  font-size: 26rpx;
+  color: #18a5e0;
+}
+
+.list-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90rpx;
+  padding: 10rpx 30rpx;
+  box-sizing: border-box;
+  z-index: 20;
+  background: rgb(239, 239, 239);
+}
+
+.search-title {
+  flex-shrink: 0;
+  font-size: 28rpx;
+  padding-right: 10rpx;
+}
+
+.list-search-box {
+  display: flex;
+  align-items: center;
+  padding: 0 15rpx;
+  width: 100%;
+  height: 54rpx;
+  background: #f5f5f5;
+  border-radius: 10rpx;
+  font-size: 24rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.list-search-box input {
+  width: 100%;
+  padding-left: 10rpx;
+}
+
+.search-button {
+  /* width: 100rpx; */
+  flex-shrink: 0;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+  background: #fff;
+  color:#4599FF;
+  vertical-align: middle;
+}
+
+/* 热门城市横排显示样式  */
+
+.list-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rpx 20rpx;
+  /* padding-right: 50rpx; */
+}
+
+.list-horizontal .list-name {
+  border: 2rpx #ddd solid;
+  border-radius: 10rpx;
+  margin: 10rpx;
+  position: relative;
+  font-size: 26rpx;
+  color: #565656;
+  width:21.05%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;padding:0;
+}
+.list-horizontal .list-name.border::after {
+  content:none;
+}
+
+.scityName{
+  color:#b0b0b0;
+}
+
+
+/* 无数据  */
+.nodata {
+  padding-top: 200rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #ddd;
+}

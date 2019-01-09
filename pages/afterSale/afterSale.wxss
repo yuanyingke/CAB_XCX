@@ -1,0 +1,78 @@
+/* pages/afterSale/afterSale.wxss */
+@import '../common/lib/weui.wxss';
+.container{
+  padding:50rpx;
+  display: flex;
+  flex-direction: column;
+}
+.weui-article{
+  padding:50rpx;
+  padding-bottom: 0
+}
+.weui-article__h3{
+  text-align: center;
+  font-size: 32rpx;
+  color:4a4a4a;
+  font-weight: bold;
+  margin-bottom: 50rpx;
+}
+.smTitle{
+  font-size: 32rpx;
+  color:4a4a4a;font-weight: bold;
+  margin-bottom: 20rpx;letter-spacing:2rpx;
+}
+.pBox{
+  /* text-indent: 2em; */
+  font-size: 26rpx;
+  line-height: 50rpx;
+  margin-bottom: 44rpx;
+}
+.pBox{
+  /* text-indent: 2em; */
+  font-size: 26rpx;
+  line-height: 50rpx;
+  color: #535353;
+  letter-spacing:2rpx;
+}
+ .p image{
+  width:42rpx;
+  height:42rpx;
+  vertical-align: middle;
+
+}
+.img_box{
+  width:42rpx;
+  height:100%;
+  
+} 
+.pBox>.p>.p{
+  display: flex;
+  margin-top: 16rpx;
+}
+.pBox_text{
+  padding-left: 10rpx;
+}
+.locationImg{
+  width:50rpx;
+  height: 58rpx;
+  vertical-align: bottom;
+}
+.footer{
+  
+  padding: 14rpx;
+  
+  height: 100rpx;
+  background: #f0f0f0;
+  text-align: center;
+}
+.footer text{
+  font-size: 24rpx;
+  line-height: 36rpx;
+  text-align: center;
+   color:#888888; 
+   letter-spacing: 2rpx;
+}
+.footer text.zaPhone{
+  color:#318eff;
+  margin: 0 4rpx;
+}
